@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北京斯派克(SPEC) - 专业宠物MRI设备制造商</title>
+    <meta name="description" content="北京斯派克专业生产AVT plus 0.3T轻量型永磁MRI设备，重量仅1-3吨，年电费<2万元，无需屏蔽间。">
+    <meta name="keywords" content="MRI设备,宠物MRI,永磁MRI,轻量型MRI,斯派克,SPEC">
+    
+    <!-- CDN资源 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 动态背景系统 - 暂时禁用 -->
+    <!-- <div class="dynamic-background background-homepage active" id="dynamicBackground"></div> -->
+    
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                                    <img src="images/logo.png" alt="斯派克SPEC" height="40">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products-solutions.html">产品与解决方案</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="industry-applications.html">行业应用</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="core-technologies.html">核心技术</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">服务支持</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">联系我们</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-nav">
+                    <button class="btn btn-outline-light btn-sm" id="languageToggle">
+                        <i class="fas fa-globe"></i> 中文 / EN
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页Hero区域 - 产品矩阵轮播图 -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="hero-title">斯派克 (SPEC) - 核磁共振技术与应用的全球开拓者</h1>
+                    <p class="hero-subtitle">为石油勘探、生命科学、食品安全及前沿科研提供全方位的NMR/MRI解决方案</p>
+                    
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-industry"></i>
+                            <span>全产业链研发</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-globe"></i>
+                            <span>全领域应用</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-image"></i>
+                            <span>全范围成像</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="products-solutions.html" class="btn btn-primary btn-lg me-3">
+                            探索解决方案 <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg">
+                            联系我们
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <!-- 产品轮播图 -->
+                    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                                                                            <div class="carousel-item active">
+                                                    <div class="hero-slide">
+                                                        <img src="images/products/mr3000-concept.jpg" 
+                                                             alt="Mobile MR3000 轻量型MRI" class="img-fluid rounded shadow-lg">
+                                                        <div class="slide-caption">
+                                                            <h3>极致轻量，无需加固</h3>
+                                                            <p>Mobile MR3000 / AVT plus 0.3T</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                            <div class="carousel-item">
+                                                    <div class="hero-slide">
+                                                        <img src="images/products/0.35t-concept.jpg" 
+                                                             alt="SPEC AVT 0.35T 永磁MRI" class="img-fluid rounded shadow-lg">
+                                                        <div class="slide-caption">
+                                                            <h3>经典永磁，历久弥新</h3>
+                                                            <p>SPEC AVT 0.35T</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                            <div class="carousel-item">
+                                                    <div class="hero-slide">
+                                                        <img src="images/products/3.0t-concept.jpg" 
+                                                             alt="Cmpact MR 3.0T 超导MRI" class="img-fluid rounded shadow-lg">
+                                                        <div class="slide-caption">
+                                                            <h3>无液氦超导，引领未来</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心优势摘要 - 品牌整体优势 -->
+    <section id="advantages" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">斯派克的核心优势</h2>
+                <p class="section-subtitle">我们致力于提供全方位的NMR/MRI解决方案</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h4>全产业链研发</h4>
+                        <p>从材料到整机全自主研制，四个专业研发中心</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>全领域应用</h4>
+                        <p>覆盖石油、医疗、食品、科研等各个领域</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h4>全范围成像</h4>
+                        <p>从0.3T到3.0T，从1D到2D NMR，从静态到动态</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>全生命周期服务</h4>
+                        <p>从售前咨询到售后维护，提供一站式服务</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- 解决方案预览 - 四大应用领域 -->
+    <section id="solutions-preview" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">四大应用领域解决方案</h2>
+                <p class="section-subtitle">为不同行业提供专业的NMR/MRI技术应用</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- 石油能源 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-oil-can"></i>
+                        </div>
+                        <h4>石油能源</h4>
+                        <p>岩心分析、孔隙度测量、渗透率评估、流体识别</p>
+                        <a href="industry-applications.html#petroleum" class="btn btn-outline-primary btn-sm">
+                            探索石油解决方案 <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 动物医疗 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <h4>动物医疗</h4>
+                        <p>宠物MRI诊断、神经系统、骨骼关节、胸腹部检查</p>
+                        <a href="industry-applications.html#medical" class="btn btn-outline-primary btn-sm">
+                            探索医疗解决方案 <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 食品农业 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <h4>食品农业</h4>
+                        <p>水分含量、油脂分析、品质检测、成分分析</p>
+                        <a href="industry-applications.html#food" class="btn btn-outline-primary btn-sm">
+                            探索食品解决方案 <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 科研教育 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4>科研教育</h4>
+                        <p>基础研究、教学演示、实验分析、技术培训</p>
+                        <a href="industry-applications.html#research" class="btn btn-outline-primary btn-sm">
+                            探索科研解决方案 <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- 产品快速预览 - 宠物医疗MRI系列 -->
+    <section id="products" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">宠物医疗MRI系列</h2>
+                <p class="section-subtitle">从轻量永磁到移动超导，为宠物医疗提供专业影像诊断解决方案</p>
+            </div>
+                                
+                                <div class="row g-4">
+                                    <!-- 栏1: 轻量型系列 (Mobile MR3000 / AVT plus 0.3T) -->
+                                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="product-series-card">
+                                            <div class="product-image">
+                                                <img src="images/products/mr3000-concept.jpg" 
+                                                     alt="Mobile MR3000 轻量型MRI" class="img-fluid rounded shadow-lg">
+                                            </div>
+                                            <div class="product-content">
+                                                <h4>轻量型/移动型MRI</h4>
+                                                <p class="product-description">重量仅1-3吨，无需加固，220V即插即用，极致节省空间。</p>
+                                                <ul class="product-features">
+                                                    <li><i class="fas fa-check text-success"></i> 重量仅1-3吨</li>
+                                                    <li><i class="fas fa-check text-success"></i> 无需场地加固</li>
+                                                    <li><i class="fas fa-check text-success"></i> 220V即插即用</li>
+                                                    <li><i class="fas fa-check text-success"></i> 极致节省空间</li>
+                                                </ul>
+                                                <a href="product-mr3000.html" class="btn btn-primary">
+                                                    了解轻量型 → <i class="fas fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 栏2: 经典永磁系列 (SPEC AVT 0.35T) -->
+                                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                        <div class="product-series-card">
+                                            <div class="product-image">
+                                                <img src="images/products/0.35t-concept.jpg" 
+                                                     alt="SPEC AVT 0.35T 永磁MRI" class="img-fluid rounded shadow-lg">
+                                            </div>
+                                            <div class="product-content">
+                                                <h4>经典高场永磁MRI</h4>
+                                                <p class="product-description">经市场20年验证，图像质量标杆，配备专利可视屏蔽间。</p>
+                                                <ul class="product-features">
+                                                    <li><i class="fas fa-check text-success"></i> 市场20年验证</li>
+                                                    <li><i class="fas fa-check text-success"></i> 图像质量标杆</li>
+                                                    <li><i class="fas fa-check text-success"></i> 专利可视屏蔽间</li>
+                                                    <li><i class="fas fa-check text-success"></i> 稳定可靠</li>
+                                                </ul>
+                                                <a href="product-avt-035t.html" class="btn btn-primary">
+                                                    了解经典款 → <i class="fas fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 栏3: 超导系列 (Cmpact MR 3.0T) -->
+                                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                                        <div class="product-series-card">
+                                            <div class="product-image">
+                                                <img src="images/products/3.0t-concept.jpg" 
+                                                     alt="Cmpact MR 3.0T 超导MRI" class="img-fluid rounded shadow-lg">
+                                            </div>
+                                            <div class="product-content">
+                                                <h4>无液氦超导MRI</h4>
+                                                <p class="product-description">全球首创无液氦超导技术，高分辨率成像，引领行业未来。</p>
+                                                <ul class="product-features">
+                                                    <li><i class="fas fa-check text-success"></i> 无液氦超导技术</li>
+                                                    <li><i class="fas fa-check text-success"></i> 高分辨率成像</li>
+                                                    <li><i class="fas fa-check text-success"></i> 无需屏蔽间</li>
+                                                    <li><i class="fas fa-check text-success"></i> 引领行业未来</li>
+                                                </ul>
+                                                <a href="product-cmpact-30t.html" class="btn btn-primary">
+                                                    了解超导系列 → <i class="fas fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+    <!-- 应用领域 -->
+    <section id="applications" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">广泛应用于精准诊断</h2>
+                <p class="section-subtitle">覆盖宠物医疗的各个专业领域</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h5>头颅神经</h5>
+                        <p>脑部肿瘤、神经系统疾病诊断</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <i class="fas fa-spine"></i>
+                        </div>
+                        <h5>脊柱关节</h5>
+                        <p>椎间盘突出、关节炎等疾病</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h5>胸腹部</h5>
+                        <p>心肺疾病、腹部肿瘤诊断</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <h5>盆腔</h5>
+                        <p>生殖系统、泌尿系统疾病</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户证言 -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">合作伙伴的成功故事</h2>
+                <p class="section-subtitle">听听他们怎么说</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"图像质量满足我们高端诊断需求，设备稳定性非常好，为我们的诊疗工作提供了有力保障。"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60x60/003366/FFFFFF?text=医院A" alt="医院A" class="rounded-circle">
+                            <div>
+                                <h6>北京爱宠医院</h6>
+                                <small>三甲宠物医院</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"运营成本控制带来了实实在在的效益，设备维护简单，售后服务响应及时，是值得信赖的合作伙伴。"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60x60/003366/FFFFFF?text=医院B" alt="医院B" class="rounded-circle">
+                            <div>
+                                <h6>上海宠物医疗中心</h6>
+                                <small>连锁宠物医院</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"轻量化设计让我们的安装过程非常顺利，无需复杂的场地改造，大大节省了时间和成本。"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60x60/003366/FFFFFF?text=医院C" alt="医院C" class="rounded-circle">
+                            <div>
+                                <h6>广州宠物专科医院</h6>
+                                <small>专科宠物医院</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 新闻动态 -->
+    <section id="news" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">最新动态</h2>
+                <p class="section-subtitle">了解行业资讯和公司动态</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/350x200/003366/FFFFFF?text=新闻1" alt="新闻1" class="img-fluid">
+                        </div>
+                        <div class="news-content">
+                            <h5>AVT plus 0.3T MRI获得CE认证</h5>
+                            <p>我们的明星产品正式获得欧盟CE认证，标志着产品品质达到国际标准...</p>
+                            <div class="news-meta">
+                                <span class="date"><i class="fas fa-calendar"></i> 2024-01-15</span>
+                                <a href="#" class="read-more">阅读更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/350x200/003366/FFFFFF?text=新闻2" alt="新闻2" class="img-fluid">
+                        </div>
+                        <div class="news-content">
+                            <h5>斯派克参加2024年宠物医疗展</h5>
+                            <p>我们将携最新产品亮相2024年亚洲宠物医疗展，展示最新的技术创新...</p>
+                            <div class="news-meta">
+                                <span class="date"><i class="fas fa-calendar"></i> 2024-01-10</span>
+                                <a href="#" class="read-more">阅读更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/350x200/003366/FFFFFF?text=新闻3" alt="新闻3" class="img-fluid">
+                        </div>
+                        <div class="news-content">
+                            <h5>AI智能成像技术升级公告</h5>
+                            <p>我们推出了全新的AI智能成像算法，进一步提升图像质量和诊断准确性...</p>
+                            <div class="news-meta">
+                                <span class="date"><i class="fas fa-calendar"></i> 2024-01-05</span>
+                                <a href="#" class="read-more">阅读更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <!-- 首屏大图与引述 -->
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">关于斯派克 - 核磁共振领域的中国力量</h2>
+                <div class="hero-quote mb-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"我们不仅制造设备，我们创造洞察世界的全新维度。"</p>
+                    </blockquote>
+                </div>
+                <h3 class="text-primary mb-3">始于 2006，忠于创新</h3>
+                <p class="section-subtitle">十八年深耕，定义核磁共振新边界</p>
+            </div>
+            
+            <!-- 我们的故事 -->
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12">
+                    <div class="story-section text-center">
+                        <h4 class="text-primary mb-4">时光淬炼，初心不改</h4>
+                        <div class="story-content">
+                            <p class="lead mb-4">2006年，北京斯派克诞生于中国科技的摇篮——中关村。自诞生之初，我们的基因里就刻满了对核磁共振技术的无限好奇与坚定信念。</p>
+                            <p class="mb-4">十八年来，我们见证并参与了中国核磁共振事业从跟跑到并跑的历程。我们从不止步于模仿，而是将"创新"融入血脉，始终致力于核心技术的自主攻关与突破。如今，斯派克已成长为一家在石油勘探、生命科学、食品农业及科研教学等领域提供全方位、跨行业核磁共振解决方案的国家级高新技术企业。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 我们的核心优势 -->
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12">
+                    <h4 class="text-center text-primary mb-5">我们的核心优势</h4>
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="advantage-card">
+                                <div class="advantage-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <h5>与北大共生长</h5>
+                                <p>我们与北京大学建立长期战略联盟，共建联合研发中心。这不仅确保了我们的技术始终站在学术最前沿，更将实验室里的尖端理论，源源不断地转化为产品中颠覆性的创新动能。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="advantage-card">
+                                <div class="advantage-icon">
+                                    <i class="fas fa-link"></i>
+                                </div>
+                                <h5>全产业链布局</h5>
+                                <p>我们是国内极少数的"全技术链"公司。从永磁/超导磁体、控制谱仪、梯度单元、射频单元到最上层的序列软件平台，所有核心组件完全自主研发、生产。这让我们能提供无与伦比的定制化服务与持续的系统升级能力。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="advantage-card">
+                                <div class="advantage-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h5>人工智能革命</h5>
+                                <p>我们积极拥抱第四次科技革命。将最前沿的AI算法深度集成于我们的设备中，实现了图像的智能增强、扫描流程的自动化优化和诊断辅助的革命性突破。这不仅提升了图像质量，更降低了使用门槛，让尖端技术变得前所未有的智能与高效。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="advantage-card">
+                                <div class="advantage-icon">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <h5>跨行业应用专家</h5>
+                                <p>我们深刻理解不同行业的独特需求。无论是分析岩心的孔隙，还是诊断宠物的神经系统，或是检测食品的油水含量，我们提供的从来都不只是一台设备，而是一整套经过验证的、解决实际问题的专业化解决方案。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 我们的里程碑 -->
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12">
+                    <h4 class="text-center text-primary mb-5">笃行致远，历程璀璨</h4>
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-marker">2006</div>
+                            <div class="timeline-content">
+                                <h5>公司成立</h5>
+                                <p>北京斯派克诞生于中国科技的摇篮——中关村，扎根核磁共振技术领域</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-marker">2008</div>
+                            <div class="timeline-content">
+                                <h5>ISO认证</h5>
+                                <p>通过ISO9001质量管理体系认证，奠定品控基石</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-marker">2015</div>
+                            <div class="timeline-content">
+                                <h5>首款宠物MRI</h5>
+                                <p>发布首款宠物专用MRI，开创国内先河</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-marker">2018</div>
+                            <div class="timeline-content">
+                                <h5>技术突破</h5>
+                                <p>石油岩心分析仪获重大技术突破，获省部级科学技术奖</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-marker">2020</div>
+                            <div class="timeline-content">
+                                <h5>生产基地</h5>
+                                <p>河北燕郊3000+平米生产服务中心建成，规模化能力飞跃</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-marker">今朝</div>
+                            <div class="timeline-content">
+                                <h5>全球布局</h5>
+                                <p>产品远销全球，成为多行业信赖的合作伙伴</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 我们的愿景 -->
+            <div class="row" data-aos="fade-up">
+                <div class="col-12">
+                    <div class="vision-section text-center">
+                        <h4 class="text-primary mb-4">引领行业，共创未来</h4>
+                        <div class="vision-content">
+                            <p class="lead mb-4">我们始终秉持"品质第一，技术领先、服务至上"的发展理念。</p>
+                            <p class="mb-4">我们的使命，是持续推动核磁共振技术的普及化、智能化、绿色化，让这项强大的技术赋能于更多行业与学者。</p>
+                            <p class="mb-0">我们的愿景，是成为世界一流的核磁共振产品与解决方案供应商，用中国智慧，为全球科技进步贡献力量。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务支持 -->
+    <section id="service" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">服务支持</h2>
+                <p class="section-subtitle">专业的技术支持与售后服务保障</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h5>安装调试</h5>
+                        <p>专业工程师现场安装调试，确保设备正常运行，提供详细的操作培训。</p>
+                        <ul class="service-features">
+                            <li>现场安装调试</li>
+                            <li>操作培训</li>
+                            <li>技术文档</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h5>技术支持</h5>
+                        <p>7×24小时技术支持热线，专业工程师随时为您解答技术问题。</p>
+                        <ul class="service-features">
+                            <li>7×24小时热线</li>
+                            <li>远程技术支持</li>
+                            <li>定期回访</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h5>维修保养</h5>
+                        <p>定期设备维护保养，预防性维护计划，确保设备长期稳定运行。</p>
+                        <ul class="service-features">
+                            <li>定期维护</li>
+                            <li>预防性保养</li>
+                            <li>配件供应</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h5>培训服务</h5>
+                        <p>提供专业的操作培训和技术培训，帮助用户充分发挥设备性能。</p>
+                        <ul class="service-features">
+                            <li>操作培训</li>
+                            <li>技术培训</li>
+                            <li>在线课程</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h5>软件更新</h5>
+                        <p>定期软件升级更新，提供最新功能和性能优化，保持技术领先。</p>
+                        <ul class="service-features">
+                            <li>定期更新</li>
+                            <li>功能升级</li>
+                            <li>性能优化</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h5>保修服务</h5>
+                        <p>提供全面的保修服务，快速响应故障报修，确保设备可靠运行。</p>
+                        <ul class="service-features">
+                            <li>全面保修</li>
+                            <li>快速响应</li>
+                            <li>质量保证</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="contact.html" class="btn btn-primary btn-lg">
+                    联系服务团队 <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                                         <div class="footer-brand mb-4">
+                                                         <img src="images/logo.png" alt="斯派克SPEC" height="40" class="mb-3">
+                         <h5>北京斯派克科技发展有限公司</h5>
+                         <p class="text-muted">专业宠物MRI设备制造商</p>
+                     </div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 北京海淀区中关村软件园</p>
+                        <p><i class="fas fa-phone me-2"></i> 王经理：13501067352</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@spec-mri.com</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h6 class="mb-3">快速链接</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#products">产品中心</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                                                 <div class="col-lg-3">
+                    <h6 class="mb-3">产品系列</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="products-solutions.html">产品与解决方案</a></li>
+                        <li><a href="industry-applications.html">行业应用</a></li>
+                        <li><a href="core-technologies.html">核心技术</a></li>
+                        <li><a href="contact.html">定制化解决方案</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h6 class="mb-3">关注我们</h6>
+                    <div class="social-links mb-3">
+                        <a href="#" class="social-link" title="微信">
+                            <i class="fab fa-weixin"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" title="邮箱">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="qr-code">
+                        <img src="https://via.placeholder.com/100x100/FFFFFF/003366?text=微信" alt="微信二维码" class="img-fluid" style="max-width: 80px;">
+                        <small class="d-block mt-2">扫码关注公众号</small>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 北京斯派克科技发展有限公司. 保留所有权利.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">京ICP备XXXXXXXX号-1 | 京公网安备XXXXXXXXXXXXXX号</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI智能对话按钮 -->
+    <div class="chat-launcher" id="chatLauncher">
+        <i class="fas fa-comments"></i>
+        <div class="chat-tooltip">您好，需要帮助吗？</div>
+    </div>
+
+    <!-- AI聊天窗口 -->
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fas fa-robot"></i>
+                <span>斯派克智能助手</span>
+                <span class="status">在线</span>
+            </div>
+            <div class="chat-controls">
+                <button class="btn btn-sm btn-outline-secondary" id="minimizeChat">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-secondary" id="closeChat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message ai-message">
+                <div class="message-content">
+                    <p>您好！我是斯派克的AI智能助手，很高兴为您服务。我可以帮您了解我们的产品信息、技术参数、应用案例等。请问有什么可以帮助您的吗？</p>
+                </div>
+                <div class="message-time">刚刚</div>
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <div class="quick-questions mb-2">
+                <button class="btn btn-sm btn-outline-primary quick-question">AVT plus 0.3T的重量是多少？</button>
+                <button class="btn btn-sm btn-outline-primary quick-question">年运营成本多少？</button>
+                <button class="btn btn-sm btn-outline-primary quick-question">如何申请演示？</button>
+            </div>
+            <div class="input-group">
+                <textarea class="form-control" id="chatInput" placeholder="请输入您关于MRI设备的问题..." rows="2"></textarea>
+                <button class="btn btn-primary" id="sendMessage">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
